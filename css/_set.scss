@@ -1,0 +1,66 @@
+@charset "utf-8";
+@import "compass";
+html {
+  font-size: 62.5%;
+}
+@mixin fontsize($size: 24, $base: 10) {
+  font-size: $size + px;
+  font-size: ($size / $base) * 1rem;
+}
+$ja_font : "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", メイリオ, Verdana, "ＭＳ Ｐゴシック", sans-serif;
+$en_font : "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$baseColor : #f9f8f6;
+$brown1: #887f69;
+$brown2 : #e2ddd4;
+$brown3 : #f9f9f5;
+$gray : #b0b0b0;
+$red : #9d1a2d;
+
+/*
+ * Mixin for placeholder
+ * @include placeholderColor(#00ff00);
+ */
+@mixin placeholder {
+    &:placeholder-shown {
+        @content;
+    }
+    &::-webkit-input-placeholder {
+        @content;
+    }
+    &:-moz-placeholder {
+        opacity: 1;
+        @content;
+    }
+    &::-moz-placeholder {
+        opacity: 1;
+        @content;
+    }
+    &:-ms-input-placeholder {
+        @content;
+    }
+}
+
+
+
+* {
+    margin:0;
+    padding:0;
+    text-decoration:none;
+    list-style:none;
+    
+}
+
+body {
+    margin:0;
+    font-size: 1.5em;
+    font-weight: 400;
+    background-color:$baseColor;
+    width:100%;
+    .sp-title {
+        display:none;
+    }
+    li {
+        display:inline-block;
+    }
+   
+}

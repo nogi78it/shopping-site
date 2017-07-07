@@ -1,0 +1,642 @@
+@charset "utf-8";
+@import "compass";
+@import "set";
+@import "header";
+@import "footer";
+@import "guid-right";
+
+
+main {
+   margin:0 auto;
+    width:67%;
+    padding:0 0;
+     .container {
+         margin:0 auto 60px auto;
+         padding:0;
+         width:100%;
+         &:after {
+              content: "";
+              display: block;
+              clear:both;
+            }
+            
+        //左カラム
+        .left-side {
+            float:left;
+            box-sizing:border-box;
+            .pankuzu {
+                box-sizing:border-box;
+                width:100%;
+                background-color:$brown2;
+                margin-bottom:10px;
+                ul {
+                    padding:6px;
+                    margin:0;
+                    li {
+                        margin:0 2px;
+                        a {
+                            @include fontsize(11);
+                            color:$brown1;
+                            }
+                    }
+                }
+            }
+            .detalis {
+                 margin-bottom:30px;
+                box-sizing:border-box;
+                background-color:#fff;
+                padding: 40px 10%;
+                &:after {
+                  content: "";
+                  display: block;
+                  clear:both;
+                }
+                .row {
+                    
+                 width: 100%;
+                .titles {
+                    display:flex;
+                    justify-content:space-between;
+                    
+                        h3 {
+                            @include fontsize(14);
+                            font-weight:bold;
+                            letter-spacing:.5rem;
+                            
+                            }
+                        p {
+                            @include fontsize(10);
+                            color:$brown2;
+                            text-align:right;
+                            
+                        }
+                    }
+                    
+                .views {
+                   
+                    padding:20px 0 17px 0;
+                    border:solid $brown2;
+                    border-width:1px 0 1px 0;
+                    width:100%;
+                    .row {
+                        &:after {
+                          content: "";
+                          display: block;
+                          clear:both;
+                        }
+                        #display_img {
+                            float:left;
+                            width: 71.1%;
+                            img {
+                              width:100%;
+                              vertical-align: bottom;
+                            }
+                        }
+                        #list_img {
+                            width: 28.9%;
+                            float:left;
+                            padding:0 0 ;
+                            margin:0 0;
+                            li {
+                                box-sizing:border-box;
+                                padding:0 0 5% 5% ;
+                                float:left;
+                                width:50%;
+                                height:20%;
+                                margin:0;
+                                list-style: none;
+                                display: inline-block;
+                                img {
+                                    vertical-align: bottom;
+                                    height:auto;
+                                    margin:0;
+                                    width: 100%;
+                                    cursor: pointer;
+                                }
+                            }
+                        }
+                    }
+                }
+                
+                .co-size {
+                    .title-img {
+                        margin-top:20px;
+                    }
+                    table {
+                        height:80px;
+                        width:100%;
+                        margin:20px 0;
+                        border:1px solid $brown2;
+                        th {
+                            border:1px solid $brown2;
+                            background-color:$brown3;
+                            color:$brown1;
+                            text-align:center;
+                            @include fontsize(12);
+                        }
+                        td {
+                            border:1px solid $brown2;
+                            text-align:center;
+                            margin:0;
+                            padding:0;
+                            p {
+                            color:$brown2;
+                            border-radius: 0px;
+                            @include fontsize(30);
+                            padding:0;
+                            margin:0;
+                            }
+                        }
+                    }
+                }
+                
+                .price-q {
+                    position:relative;
+                    width:100%;
+                    float:none;
+                    .price {
+                        &:after {
+                          content: "";
+                          display: block;
+                          clear:both;
+                        }
+                        
+                        table {
+                            margin:0;
+                            table-layout:fixed;
+                            float:left;
+                            width:60%;
+                            border-color:$brown2;
+                            tr {
+                                width:100%;
+                                th {
+                                    height:40px;
+                                    width:30%;
+                                    vertical-align: middle;
+                                    border-top :1px solid $brown2;
+                                    border-bottom:none;
+                                }
+                                td {
+                                    border-top :1px solid $brown2;
+                                    border-bottom:none;
+                                    input {
+                                        width:70%;
+                                        margin:0;
+                                        border-radius: 0px;
+                                        border :1px solid $brown2;
+                                    }
+                                    span {
+                                        font-style:italic;
+                                        color:#e80f66;
+                                        .a {
+                                            @include fontsize(25);
+                                            font-style:italic;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        
+                        .add {
+                            width:40%;
+                            float:right;
+                            text-align:right;
+                            vertical-align: top;
+                            display:inline-block;
+                            img {
+                                max-width:100%;
+                            }
+                        }
+                    }
+                }
+                
+                .product-text {
+                    border-top:1px solid $brown2;
+                    padding-top:35px;
+                    h4 {
+                         @include fontsize(16);
+                         padding-bottom:15px;
+                         color:$brown1;
+                         border-bottom :1px solid $brown1;
+                    }
+                    h5 {
+                        margin:10px;
+                        @include fontsize(16);
+                        color:$brown1;
+                        span {
+                            @include fontsize(27);
+                        }
+                        
+                    }
+                    p {
+                        @include fontsize(14);
+                        margin-bottom:25px;
+                    }
+                    table {
+                        width:100%;
+                        th {
+                            @include fontsize(12);
+                            text-align:center;
+                            width:20%;
+                            background-color:$brown3;
+                            border:1px solid $brown2;
+                            color:$brown1;
+                        }
+                        td {
+                            color:$brown1;
+                            width:80%;
+                            @include fontsize(12);
+                            border:1px solid $brown2;
+                        }
+                    }
+                }
+            }
+            }
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            .new-item, .popular-item {
+                display:block;
+                margin:0 0 30px 0;
+                .row {
+                    &:after {
+                          content: "";
+                          display: block;
+                          clear:both;
+                        }
+                    .title {
+                        width:100%;
+                        padding:0 0 26px 0;
+                    }
+                    .item-box {
+                        box-sizing:border-box;
+                        width:32.7%;
+                        height:auto;
+                        padding:15px;
+                        margin:1px;
+                        background-color:#fff;
+                        float:left;
+                        img {
+                            height:auto;
+                            width:100%;
+                        }
+                        p {
+                            @include fontsize(12);
+                            font-weight:700;
+                            padding:0 0 20px 0;
+                            margin:0;
+                        }
+                        .price {
+                            padding:0 0 10px 0 ;
+                        }
+                    }
+                }
+                .block-btn {
+                    margin-top:20px;
+                display:flex;
+                justify-content:space-between;
+                a {
+                    background-color:$brown1;
+                    color:#fff;
+                    font-weight:bold;
+                    box-sizing:border-box;
+                    text-align:center;
+                    display:inline-block;
+                    width:120px;
+                    padding:10px 0;
+                    
+                    
+                }
+            }
+            }
+            
+            
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+//スマホ向け
+@media (max-width: 550px) {
+    body {
+        box-sizing:border-box;
+        padding:10px;
+    }
+main {
+    width:100%;
+    padding:0 0;
+     .container {
+         margin:0 auto 60px auto;
+         padding:0;
+         width:100%;
+         &:after {
+              content: "";
+              display: block;
+              clear:both;
+            }
+            
+        //左カラム
+        .left-side {
+            float:left;
+            box-sizing:border-box;
+            .pankuzu {
+                box-sizing:border-box;
+                width:100%;
+                background-color:$brown2;
+                margin-bottom:10px;
+                ul {
+                    padding:6px;
+                    margin:0;
+                    li {
+                        margin:0 2px;
+                        a {
+                            @include fontsize(11);
+                            color:$brown1;
+                            }
+                    }
+                }
+            }
+            .detalis {
+                 margin-bottom:25px;
+                box-sizing:border-box;
+                background-color:#fff;
+                padding: 20px 10px;
+                &:after {
+                  content: "";
+                  display: block;
+                  clear:both;
+                }
+                .row {
+                    
+                 width: 100%;
+                .titles {
+                    display:inline;
+                    
+                        h3 {
+                            @include fontsize(14);
+                            font-weight:bold;
+                            letter-spacing:.5rem;
+                            margin:0;
+                            }
+                        p { 
+                            text-align:left;
+                            @include fontsize(10);
+                            color:$brown2;
+                             margin-bottom:10px;
+                        }
+                    }
+                    
+                .views {
+                   
+                    padding:0 0 10px 0;
+                    border:solid $brown2;
+                    border-width:1px 0 1px 0;
+                    width:100%;
+                    .row {
+                        &:after {
+                          content: "";
+                          display: block;
+                          clear:both;
+                        }
+                        #display_img {
+                            float:none;
+                            width: 100%;
+                            margin:10px 0;
+                            img {
+                              width:100%;
+                              vertical-align: bottom;
+                            }
+                        }
+                        #list_img {
+                            width: 100%;
+                            float:left;
+                            padding:0 0 ;
+                            margin:0 0;
+                            li {
+                                box-sizing:border-box;
+                                padding:.8%;
+                                float:left;
+                                width:20%;
+                                height:20%;
+                                margin:0;
+                                list-style: none;
+                                display: inline-block;
+                                img {
+                                    vertical-align: bottom;
+                                    height:auto;
+                                    margin:0;
+                                    width: 100%;
+                                    cursor: pointer;
+                                }
+                            }
+                        }
+                    }
+                }
+                
+                .co-size {
+                    .title-img {
+                        margin-top:20px;
+                    }
+                    table {
+                        height:80px;
+                        width:100%;
+                        margin:20px 0;
+                        border:1px solid $brown2;
+                        th {
+                            border:1px solid $brown2;
+                            background-color:$brown3;
+                            color:$brown1;
+                            text-align:center;
+                            @include fontsize(12);
+                        }
+                        td {
+                            border:1px solid $brown2;
+                            text-align:center;
+                            margin:0;
+                            padding:0;
+                            p {
+                            color:$brown2;
+                            border-radius: 0px;
+                            @include fontsize(30);
+                            padding:0;
+                            margin:0;
+                            }
+                        }
+                    }
+                }
+                
+                .price-q {
+                    position:relative;
+                    width:100%;
+                    float:none;
+                    .price {
+                        &:after {
+                          content: "";
+                          display: block;
+                          clear:both;
+                        }
+                        
+                        table {
+                            margin-bottom:10px;
+                            float:left;
+                            width:100%;
+                            border-color:$brown2;
+                            tr {
+                                width:100%;
+                                th {
+                                    height:40px;
+                                    width:30%;
+                                    vertical-align: middle;
+                                    border-top :1px solid $brown2;
+                                    border-bottom:1px solid $brown2;
+                                }
+                                td {
+                                    border-top :1px solid $brown2;
+                                    border-bottom:1px solid $brown2;
+                                    input {
+                                        width:70%;
+                                        margin:0;
+                                        border-radius: 0px;
+                                        border :1px solid $brown2;
+                                    }
+                                    span {
+                                        font-style:italic;
+                                        color:#e80f66;
+                                        .a {
+                                            @include fontsize(25);
+                                            font-style:italic;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        
+                        .add {
+                            width:100%;
+                            text-align:center;
+                            vertical-align: top;
+                            display:inline-block;
+                            img {
+                                max-width:100%;
+                            }
+                        }
+                    }
+                }
+                
+                .product-text {
+                    border-top:none;
+                    padding-top:30px;
+                    h4 {
+                         @include fontsize(16);
+                         padding-bottom:15px;
+                         color:$brown1;
+                         border-bottom :1px solid $brown1;
+                    }
+                    h5 {
+                        margin:10px;
+                        @include fontsize(16);
+                        color:$brown1;
+                        span {
+                            @include fontsize(27);
+                        }
+                        
+                    }
+                    p {
+                        @include fontsize(14);
+                        margin-bottom:25px;
+                    }
+                    table {
+                        width:100%;
+                        th {
+                            @include fontsize(12);
+                            text-align:center;
+                            width:20%;
+                            background-color:$brown3;
+                            border:1px solid $brown2;
+                            color:$brown1;
+                        }
+                        td {
+                            color:$brown1;
+                            width:80%;
+                            @include fontsize(12);
+                            border:1px solid $brown2;
+                        }
+                    }
+                }
+            }
+            }
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            .new-item, .popular-item {
+                display:block;
+                margin:16px 0;
+                .row {
+                    &:after {
+                          content: "";
+                          display: block;
+                          clear:both;
+                        }
+                    .title {
+                        display:none;
+                    }
+                    .sp-title {
+                        margin:0 auto;
+                        display:block;
+                        padding:0 0 16px 0;
+                    }
+                    .item-box {
+                        box-sizing:border-box;
+                        width:49%;
+                        height:auto;
+                        padding:10px;
+                        margin:1px;
+                        background-color:#fff;
+                        float:left;
+                        img {
+                            height:auto;
+                            width:100%;
+                        }
+                        p {
+                            @include fontsize(12);
+                            font-weight:700;
+                            padding:0 0 20px 0;
+                            margin:0;
+                        }
+                        .price {
+                            padding:0 0 10px 0 ;
+                        }
+                    }
+                }
+            }
+            
+            
+        }
+    }
+}
+
+
+
+
+
+}

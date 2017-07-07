@@ -1,0 +1,160 @@
+@charset "utf-8";
+@import "set";
+@import "compass";
+@import "header";
+@import "footer";
+@import "guid-right";
+
+
+main {
+   margin:0 auto;
+    width:67%;
+    padding:0 0;
+     .container {
+         margin:0 auto 60px auto;
+         padding:0;
+         width:100%;
+         &:after {
+              content: "";
+              display: block;
+              clear:both;
+            }
+            
+        //左カラム
+        .left-side {
+            float:left;
+            box-sizing:border-box;
+            .eye-catch {
+                .owl-carousel {
+                }
+            }
+            .new-item, .popular-item {
+                display:block;
+                margin:30px 0;
+                .row {
+                    &:after {
+                          content: "";
+                          display: block;
+                          clear:both;
+                        }
+                    .title {
+                        width:100%;
+                        padding:0 0 26px 0;
+                    }
+                    .item-box {
+                        box-sizing:border-box;
+                        width:32.7%;
+                        height:auto;
+                        padding:15px;
+                        margin:1px;
+                        background-color:#fff;
+                        float:left;
+                        img {
+                            height:auto;
+                            width:100%;
+                        }
+                        p {
+                            @include fontsize(12);
+                            font-weight:700;
+                            padding:0 0 20px 0;
+                            margin:0;
+                        }
+                        .price {
+                            padding:0 0 10px 0 ;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+//スマホ向け
+@media (max-width: 550px) {
+    body {
+        box-sizing:border-box;
+        padding:10px;
+    }
+
+
+main {
+   margin:0 auto;
+   width:100%;
+    padding:0 0;
+     .container {
+         margin:0 auto 60px auto;
+         padding:0;
+         width:100%;
+         &:after {
+              content: "";
+              display: block;
+              clear:both;
+            }
+            
+        //上カラム
+        .left-side {
+            float:left;
+            box-sizing:border-box;
+            .eye-catch {
+                .owl-carousel {
+                }
+            }
+            .new-item, .popular-item {
+                display:block;
+                margin:16px 0;
+                .row {
+                    &:after {
+                          content: "";
+                          display: block;
+                          clear:both;
+                        }
+                    .title {
+                        display:none;
+                    }
+                    .sp-title {
+                        margin:0 auto;
+                        display:block;
+                        padding:0 0 16px 0;
+                    }
+                    .item-box {
+                        box-sizing:border-box;
+                        width:49%;
+                        height:auto;
+                        padding:10px;
+                        margin:1px;
+                        background-color:#fff;
+                        float:left;
+                        img {
+                            height:auto;
+                            width:100%;
+                        }
+                        p {
+                            @include fontsize(12);
+                            font-weight:700;
+                            padding:0 0 20px 0;
+                            margin:0;
+                        }
+                        .price {
+                            padding:0 0 10px 0 ;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+}
+
+

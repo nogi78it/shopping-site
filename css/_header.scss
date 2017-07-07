@@ -1,0 +1,144 @@
+
+
+//ヘッダー
+header {
+    width:67%;
+    height:120px;
+    margin:0 auto;
+    display:block;
+    
+    .contain {
+        &:after {
+      content: "";
+      display: block;
+      clear:both;
+    }
+        
+        .logo {
+            margin:0;
+            padding:40px 0;
+            float:left;
+            a { 
+                margin:0;
+                display:inline-block;
+            }
+        }
+        .sp-logo {
+            display:none;
+        }
+        .menu {
+            padding:70px 0 40px 0;
+            margin:0 auto;
+            float:right;
+            .row {
+                display:inline-block;
+                text-align:right;
+                ul {
+                    margin:0;
+                   li {
+                       text-align:right;
+                       margin: 0 12px;
+                       
+                   }
+                   .menu-icon {
+                       margin: 6px;
+                   }
+                }
+            }
+        }
+        .sp-menu {
+            display:none;
+        }
+    }
+}
+
+
+//スマホ向け
+@media (max-width: 550px) {
+    body {
+        box-sizing:border-box;
+        padding:10px;
+        
+    }
+    
+//spヘッダー
+    header {
+    width:100%;
+    height:90px;
+    margin:0 auto;
+    display:block;
+    float:none;
+    text-align:center;
+    
+    
+    .contain {
+        position: relative;
+        width:100%;
+        &:after {
+          content: "";
+          display: block;
+          clear:both;
+         }
+        .logo {
+            display:none;
+        }
+        .sp-logo {
+            display:block;
+            float:none;
+            margin:0 auto;
+            padding:14px 0 0 0;
+            a { 
+            }
+        }
+        .menu {
+            display:none;
+        }
+        .sp-menu {
+            display:block;
+            float:none;
+            padding:0;
+            margin:0 auto;
+            
+                ul {
+                    
+                    margin:0;
+                   li {
+                       text-align:left;
+                       
+                       .sp_navi_li {
+                          display:none;
+                          width:45%;
+                          margin:0 auto;
+                          z-index: 100;
+                          position: absolute;
+                          right:0;
+                          margin:0;
+                          .sp_navi {
+                              display:block;
+                              border-bottom:1px solid $brown1;
+                              margin:0;
+                              a {
+                              display:block;
+                              box-sizing:border-box;
+                              padding:10px;
+                              background-color:#fff;
+                                  img {
+                                      max-width:100%;
+                                 }
+                              }
+                          }
+                              
+                       }
+                           
+                       
+                       
+                   }
+                   .sp-menu-icon {
+                       display:inline-block;
+                       margin: 5px;
+                   }
+                }
+        }
+    }
+}
+}
