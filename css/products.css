@@ -140,7 +140,7 @@ footer {
         padding: 35px 0 5px 0; }
         footer .root ul li a {
           color: black;
-          font-weight: bold; }
+          font-weight: normal; }
     footer .root p {
       font-size: 10px;
       font-size: 1rem;
@@ -173,7 +173,7 @@ footer {
           footer .root ul li a {
             font-size: 11px;
             font-size: 1.1rem;
-            font-weight: bold;
+            font-weight: normal;
             margin: 0;
             padding: 0;
             color: black; }
@@ -223,7 +223,7 @@ main {
           main .container .left-side .guide .row .gui p {
             font-size: 12px;
             font-size: 1.2rem;
-            font-weight: bold;
+            font-weight: normal;
             margin-bottom: 20px; }
           main .container .left-side .guide .row .gui img {
             max-width: 100%; }
@@ -327,7 +327,7 @@ main {
           display: block;
           font-size: 12px;
           font-size: 1.2rem;
-          font-weight: bold; }
+          font-weight: normal; }
       main .container .right-side .about, main .container .right-side .info {
         margin-bottom: 10px; }
         main .container .right-side .about .link, main .container .right-side .info .link {
@@ -350,7 +350,7 @@ main {
               padding: 0;
               margin: 0;
               text-align: left;
-              font-weight: bold;
+              font-weight: normal;
               font-size: 12px;
               font-size: 1.2rem; }
             main .container .right-side .about .box .img img, main .container .right-side .info .box .img img {
@@ -407,7 +407,7 @@ main {
             main .container .left-side .guide .row .gui p {
               font-size: 14px;
               font-size: 1.4rem;
-              font-weight: bold;
+              font-weight: normal;
               margin-bottom: 20px; }
             main .container .left-side .guide .row .gui img {
               max-width: 100%; }
@@ -500,7 +500,7 @@ main {
             margin: 0;
             font-size: 13px;
             font-size: 1.3rem;
-            font-weight: bold;
+            font-weight: normal;
             display: block;
             padding: 16px; }
         main .container .right-side .about, main .container .right-side .info {
@@ -629,6 +629,7 @@ main {
             margin: 20px 0;
             border: 1px solid #e2ddd4; }
             main .container .left-side .detalis .row .co-size table th {
+              font-weight: normal;
               border: 1px solid #e2ddd4;
               background-color: #f9f9f5;
               color: #887f69;
@@ -698,12 +699,14 @@ main {
             border-top: 1px solid #e2ddd4;
             padding-top: 35px; }
             main .container .left-side .detalis .row .product-text h4 {
+              font-weight: bold;
               font-size: 16px;
               font-size: 1.6rem;
               padding-bottom: 15px;
               color: #887f69;
               border-bottom: 1px solid #887f69; }
             main .container .left-side .detalis .row .product-text h5 {
+              font-weight: bold;
               margin: 10px;
               font-size: 16px;
               font-size: 1.6rem;
@@ -718,6 +721,7 @@ main {
             main .container .left-side .detalis .row .product-text table {
               width: 100%; }
               main .container .left-side .detalis .row .product-text table th {
+                font-weight: normal;
                 font-size: 12px;
                 font-size: 1.2rem;
                 text-align: center;
@@ -755,7 +759,7 @@ main {
           main .container .left-side .new-item .row .item-box p, main .container .left-side .popular-item .row .item-box p {
             font-size: 12px;
             font-size: 1.2rem;
-            font-weight: 700;
+            font-weight: normal;
             padding: 0 0 20px 0;
             margin: 0; }
           main .container .left-side .new-item .row .item-box .price, main .container .left-side .popular-item .row .item-box .price {
@@ -767,7 +771,7 @@ main {
           main .container .left-side .new-item .block-btn a, main .container .left-side .popular-item .block-btn a {
             background-color: #887f69;
             color: #fff;
-            font-weight: bold;
+            font-weight: norma;
             box-sizing: border-box;
             text-align: center;
             display: inline-block;
@@ -876,6 +880,7 @@ main {
               margin: 20px 0;
               border: 1px solid #e2ddd4; }
               main .container .left-side .detalis .row .co-size table th {
+                font-weight: normal;
                 border: 1px solid #e2ddd4;
                 background-color: #f9f9f5;
                 color: #887f69;
@@ -941,12 +946,14 @@ main {
               border-top: none;
               padding-top: 30px; }
               main .container .left-side .detalis .row .product-text h4 {
+                font-weight: bold;
                 font-size: 16px;
                 font-size: 1.6rem;
                 padding-bottom: 15px;
                 color: #887f69;
                 border-bottom: 1px solid #887f69; }
               main .container .left-side .detalis .row .product-text h5 {
+                font-weight: bold;
                 margin: 10px;
                 font-size: 16px;
                 font-size: 1.6rem;
@@ -959,8 +966,10 @@ main {
                 font-size: 1.4rem;
                 margin-bottom: 25px; }
               main .container .left-side .detalis .row .product-text table {
+                font-weight: normal;
                 width: 100%; }
                 main .container .left-side .detalis .row .product-text table th {
+                  font-weight: normal;
                   font-size: 12px;
                   font-size: 1.2rem;
                   text-align: center;
@@ -1001,7 +1010,7 @@ main {
             main .container .left-side .new-item .row .item-box p, main .container .left-side .popular-item .row .item-box p {
               font-size: 12px;
               font-size: 1.2rem;
-              font-weight: 700;
+              font-weight: normal;
               padding: 0 0 20px 0;
               margin: 0; }
             main .container .left-side .new-item .row .item-box .price, main .container .left-side .popular-item .row .item-box .price {

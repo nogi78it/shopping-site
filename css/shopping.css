@@ -140,7 +140,7 @@ footer {
         padding: 35px 0 5px 0; }
         footer .root ul li a {
           color: black;
-          font-weight: bold; }
+          font-weight: normal; }
     footer .root p {
       font-size: 10px;
       font-size: 1rem;
@@ -173,7 +173,7 @@ footer {
           footer .root ul li a {
             font-size: 11px;
             font-size: 1.1rem;
-            font-weight: bold;
+            font-weight: normal;
             margin: 0;
             padding: 0;
             color: black; }
@@ -223,7 +223,7 @@ main {
           main .container .left-side .guide .row .gui p {
             font-size: 12px;
             font-size: 1.2rem;
-            font-weight: bold;
+            font-weight: normal;
             margin-bottom: 20px; }
           main .container .left-side .guide .row .gui img {
             max-width: 100%; }
@@ -327,7 +327,7 @@ main {
           display: block;
           font-size: 12px;
           font-size: 1.2rem;
-          font-weight: bold; }
+          font-weight: normal; }
       main .container .right-side .about, main .container .right-side .info {
         margin-bottom: 10px; }
         main .container .right-side .about .link, main .container .right-side .info .link {
@@ -350,7 +350,7 @@ main {
               padding: 0;
               margin: 0;
               text-align: left;
-              font-weight: bold;
+              font-weight: normal;
               font-size: 12px;
               font-size: 1.2rem; }
             main .container .right-side .about .box .img img, main .container .right-side .info .box .img img {
@@ -407,7 +407,7 @@ main {
             main .container .left-side .guide .row .gui p {
               font-size: 14px;
               font-size: 1.4rem;
-              font-weight: bold;
+              font-weight: normal;
               margin-bottom: 20px; }
             main .container .left-side .guide .row .gui img {
               max-width: 100%; }
@@ -500,7 +500,7 @@ main {
             margin: 0;
             font-size: 13px;
             font-size: 1.3rem;
-            font-weight: bold;
+            font-weight: normal;
             display: block;
             padding: 16px; }
         main .container .right-side .about, main .container .right-side .info {
@@ -572,7 +572,7 @@ main {
           main .container .left-side .new-item .row .item-box p, main .container .left-side .popular-item .row .item-box p {
             font-size: 12px;
             font-size: 1.2rem;
-            font-weight: 700;
+            font-weight: normal;
             padding: 0 0 20px 0;
             margin: 0; }
           main .container .left-side .new-item .row .item-box .price, main .container .left-side .popular-item .row .item-box .price {
@@ -625,7 +625,7 @@ main {
             main .container .left-side .new-item .row .item-box p, main .container .left-side .popular-item .row .item-box p {
               font-size: 12px;
               font-size: 1.2rem;
-              font-weight: 700;
+              font-weight: normal;
               padding: 0 0 20px 0;
               margin: 0; }
             main .container .left-side .new-item .row .item-box .price, main .container .left-side .popular-item .row .item-box .price {
