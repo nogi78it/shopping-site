@@ -2,7 +2,7 @@
 
 //ヘッダー
 header {
-    width:67%;
+    width:70%;
     height:120px;
     margin:0 auto;
     display:block;
@@ -107,11 +107,13 @@ header {
                        
                        .sp_navi_li {
                           display:none;
+                          padding:0;
                           width:45%;
                           margin:0 auto;
                           z-index: 100;
                           position: absolute;
                           right:0;
+                          top:90px;
                           margin:0;
                           .sp_navi {
                               display:block;

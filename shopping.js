@@ -17,9 +17,6 @@ $(document).ready(function(){
         $(this).next().slideToggle();
       });
       
-       $(".categories li").click(function () {
-        location.href = "list.html";
-      });
  
   });
     

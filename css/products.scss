@@ -8,7 +8,7 @@
 
 main {
    margin:0 auto;
-    width:67%;
+    width:70%;
     padding:0 0;
      .container {
          margin:0 auto 60px auto;
@@ -43,7 +43,7 @@ main {
             }
             .detalis {
                  margin-bottom:30px;
-                box-sizing:border-box;
+                box-sizing:borr-box;
                 background-color:#fff;
                 padding: 40px 10%;
                 &:after {
@@ -185,9 +185,12 @@ main {
                                         border-radius: 0px;
                                         border :1px solid $brown2;
                                     }
-                                    span {
+                                    .c {
                                         font-style:italic;
                                         color:#e80f66;
+                                        .b {
+                                            font-style:oblique;
+                                        }
                                         .a {
                                             @include fontsize(25);
                                             font-style:italic;

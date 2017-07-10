@@ -1,7 +1,7 @@
 
 main {
    margin:0 auto;
-    width:67%;
+    width:70%;
     padding:0 0;
      .container {
          margin:0 auto 60px auto;
@@ -141,13 +141,17 @@ main {
                         box-sizing:border-box;
                         vertical-align: middle;
                         background-color:#fff;
-                        padding:14px;
+                        padding:0px;
                         margin:1px;
                         background-image:url(../image/top/next_icon.png);
                         background-repeat:no-repeat;
                         background-position:96% center;
-                        p { 
+                        a { 
+                            box-sizing:border-box;
+                            padding:14px;
                             margin:0;
+                            color:black;
+                            display:block;
                             @include fontsize(12);
                             font-weight:bold;
                         }
@@ -341,15 +345,16 @@ main {
                         box-sizing:border-box;
                         vertical-align: middle;
                         background-color:#fff;
-                        padding:14px;
                         margin:1px;
                         background-image:url(../image/top/next_icon.png);
                         background-repeat:no-repeat;
                         background-position:96% center;
-                        p { 
+                        a { 
                             margin:0;
                             @include fontsize(13);
                             font-weight:bold;
+                            display:block;
+                            padding:16px;
                         }
                        
                         
